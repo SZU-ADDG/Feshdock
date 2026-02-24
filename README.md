@@ -1,10 +1,12 @@
-# 1. Synopsis
+# Feshdock: A Divide-and-Conquer Protein--Protein Complex Conformation Prediction Algorithm
+
+## 1. Synopsis
 
 Feshdock is focused on protein-protein docking method based on the Fast Fourier Transform (FFT) and evolutionary computation algorithms. Feshdock leverages the FFT to globally scan potential binding positions, which are then partitioned into multiple clusters using the K-means method. These clusters are locally optimized by a swarm intelligence algorithm in a divide-and-conquer manner, accompanied by an anisotropic network model considering protein flexibility. Finally, hierarchical clustering is employed to determine the final candidate complex conformations.
 ![Overall framework of Feshdock](./pic/framework.png)
 
 
-# 2. Installation
+## 2. Installation
 
 Feshdock is recommended to be compiled and executed in the Linux  OS, it has not been tested on Microsoft Windows and may bave some issues.
 
@@ -36,7 +38,7 @@ Remember that all executables need to be authorized by `chmod +x [executable fil
 
 
 
-# 3. Docking
+## 3. Docking
 
 Place the receptor protein, ligand protein, and native comple structure files to be docked in the `data/` directory, then execute the following command for docking:
 
